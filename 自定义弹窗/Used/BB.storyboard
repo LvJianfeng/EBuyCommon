@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yZo-C8-2t7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="rEw-R6-W3G">
+            <objects>
+                <viewController id="yZo-C8-2t7" customClass="BBTestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KpC-bp-0TI"/>
+                        <viewControllerLayoutGuide type="bottom" id="foj-Hl-GWt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yP0-Pu-abf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8I6-Id-aXh">
+                                <rect key="frame" x="0.0" y="187" width="320" height="30"/>
+                                <state key="normal" title="自定义弹窗二"/>
+                                <connections>
+                                    <action selector="alertTwo:" destination="yZo-C8-2t7" eventType="touchUpInside" id="lIF-R3-9eh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJw-8C-0Za">
+                                <rect key="frame" x="0.0" y="125" width="320" height="30"/>
+                                <state key="normal" title="自定义弹窗一"/>
+                                <connections>
+                                    <action selector="alertOne:" destination="yZo-C8-2t7" eventType="touchUpInside" id="sn1-XO-ZKX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0p-09-IMQ">
+                                <rect key="frame" x="0.0" y="253" width="320" height="30"/>
+                                <state key="normal" title="自定义弹窗三"/>
+                                <connections>
+                                    <action selector="alertThree:" destination="yZo-C8-2t7" eventType="touchUpInside" id="xVd-zo-xdK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8BP-os-cH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="101"/>
+        </scene>
+    </scenes>
+</document>
