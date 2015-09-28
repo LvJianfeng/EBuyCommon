@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="THv-BE-0QQ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Test Tip View Controller-->
+        <scene sceneID="mTD-Q3-l05">
+            <objects>
+                <viewController id="THv-BE-0QQ" customClass="BBTestTipViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eAi-ze-XbD"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHl-Gb-Xa8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Qe-tc-7Sk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOi-gA-oRc">
+                                <rect key="frame" x="70" y="182" width="180" height="30"/>
+                                <state key="normal" title="静态提示文字，倒计时消失"/>
+                                <connections>
+                                    <action selector="testTip2:" destination="THv-BE-0QQ" eventType="touchUpInside" id="o8i-8y-OSu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pg-Bk-L9m">
+                                <rect key="frame" x="78" y="233" width="165" height="30"/>
+                                <state key="normal" title="有标题，有消息体得提示"/>
+                                <connections>
+                                    <action selector="testTip3:" destination="THv-BE-0QQ" eventType="touchUpInside" id="c9O-8N-x3l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKU-4E-Hnh">
+                                <rect key="frame" x="50" y="281" width="220" height="30"/>
+                                <state key="normal" title="出现提示内容，只是Y位置自定义"/>
+                                <connections>
+                                    <action selector="testTip4:" destination="THv-BE-0QQ" eventType="touchUpInside" id="47G-Sc-ih3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcA-el-BHq">
+                                <rect key="frame" x="83" y="334" width="156" height="30"/>
+                                <state key="normal" title="loading可以自定义文本"/>
+                                <connections>
+                                    <action selector="testTip5:" destination="THv-BE-0QQ" eventType="touchUpInside" id="m2k-PN-hUI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXq-de-70q">
+                                <rect key="frame" x="67" y="389" width="186" height="30"/>
+                                <state key="normal" title="loading转圈，自定义文本哈"/>
+                                <connections>
+                                    <action selector="testTip6:" destination="THv-BE-0QQ" eventType="touchUpInside" id="7P5-23-iYn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6r-WZ-bgc">
+                                <rect key="frame" x="48" y="124" width="225" height="30"/>
+                                <state key="normal" title="静态提示性文字，只有触摸才消失"/>
+                                <connections>
+                                    <action selector="testTip1:" destination="THv-BE-0QQ" eventType="touchUpInside" id="Gn6-C5-kBB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fKU-4E-Hnh" firstAttribute="top" secondItem="8Pg-Bk-L9m" secondAttribute="bottom" constant="18" id="2JE-xP-hSB"/>
+                            <constraint firstItem="8Pg-Bk-L9m" firstAttribute="top" secondItem="yOi-gA-oRc" secondAttribute="bottom" constant="21" id="9RT-3N-QIy"/>
+                            <constraint firstItem="yOi-gA-oRc" firstAttribute="top" secondItem="Y6r-WZ-bgc" secondAttribute="bottom" constant="28" id="Cbt-ni-GoB"/>
+                            <constraint firstItem="VXq-de-70q" firstAttribute="centerX" secondItem="fKU-4E-Hnh" secondAttribute="centerX" id="DhS-vQ-d68"/>
+                            <constraint firstItem="8Pg-Bk-L9m" firstAttribute="centerX" secondItem="yOi-gA-oRc" secondAttribute="centerX" id="ECA-SG-fxL"/>
+                            <constraint firstItem="VXq-de-70q" firstAttribute="top" secondItem="QcA-el-BHq" secondAttribute="bottom" constant="25" id="Ei3-YL-09C"/>
+                            <constraint firstItem="8Pg-Bk-L9m" firstAttribute="centerX" secondItem="fKU-4E-Hnh" secondAttribute="centerX" id="JuE-YQ-1Hc"/>
+                            <constraint firstItem="yOi-gA-oRc" firstAttribute="centerX" secondItem="Y6r-WZ-bgc" secondAttribute="centerX" id="MjH-bI-lCe"/>
+                            <constraint firstItem="8Pg-Bk-L9m" firstAttribute="centerX" secondItem="2Qe-tc-7Sk" secondAttribute="centerX" id="QhS-oq-LDS"/>
+                            <constraint firstItem="Y6r-WZ-bgc" firstAttribute="top" secondItem="eAi-ze-XbD" secondAttribute="bottom" constant="104" id="a5h-je-Gfa"/>
+                            <constraint firstItem="QcA-el-BHq" firstAttribute="top" secondItem="fKU-4E-Hnh" secondAttribute="bottom" constant="23" id="sl2-Cb-5Qt"/>
+                            <constraint firstItem="8Pg-Bk-L9m" firstAttribute="centerX" secondItem="QcA-el-BHq" secondAttribute="centerX" id="yAc-TI-GV6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Lm-eL-rj1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254.93333333333334" y="372.04000000000002"/>
+        </scene>
+    </scenes>
+</document>

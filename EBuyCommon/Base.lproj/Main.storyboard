@@ -34,13 +34,24 @@
                                             <segue destination="cd0-Ce-h56" kind="push" id="R13-OT-Mcw"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="yaX-Rs-g9Y">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="55" id="yaX-Rs-g9Y">
                                         <rect key="frame" x="0.0" y="119" width="600" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yaX-Rs-g9Y" id="bjq-W1-DfA">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="54"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BBTipView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4Q-xm-WFf">
+                                                    <rect key="frame" x="15" y="15" width="92" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Znw-QL-qUr" kind="push" id="Nhq-fm-d8W"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="dzc-XT-RTU">
                                         <rect key="frame" x="0.0" y="174" width="600" height="55"/>
@@ -73,6 +84,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdA-ka-4o6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1370" y="-203"/>
+        </scene>
+        <!--BBTip-->
+        <scene sceneID="9Qp-pa-ct0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BBTip" id="Znw-QL-qUr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VHz-YU-OE5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5bq-0i-LRo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1382.5" y="-112"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HP4-6t-SN5">
