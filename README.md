@@ -8,6 +8,10 @@
 Used目录为Demo类文件
 Resources 为资源文件，只需要导入资源文件即可，以及Catagory目录的类目文件。
 
+##gif展示
+![](https://github.com/LvJianfeng/EBuyCommon/blob/master/EBuyCommon/test2.git "") 
+![](https://github.com/LvJianfeng/EBuyCommon/blob/master/EBuyCommon/test1.git "") 
+
 ##自定义弹簧式弹出窗口
 ###### 自定义弹窗一
 ![](https://github.com/LvJianfeng/EBuyCommon/blob/master/EBuyCommon/1.png "自定义弹窗一") 
