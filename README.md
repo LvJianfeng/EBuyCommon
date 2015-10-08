@@ -9,7 +9,9 @@ Used目录为Demo类文件
 Resources 为资源文件，只需要导入资源文件即可，以及Catagory目录的类目文件。
 
 ##gif展示
+######HUD
 ![](https://github.com/LvJianfeng/EBuyCommon/blob/master/EBuyCommon/test2.gif "") 
+######popup
 ![](https://github.com/LvJianfeng/EBuyCommon/blob/master/EBuyCommon/test1.gif "") 
 
 ##自定义弹簧式弹出窗口
